@@ -264,10 +264,10 @@ async function handleSubmit() {
   status.value = 'idle'
 
   const { error } = await supabase.from('contacts').insert({
-    name: form.name,
+    nom: form.name,
     email: form.email,
-    phone: form.phone || null,
-    subject: form.subject,
+    telephone: form.phone || null,
+    sujet: form.subject,
     message: form.message,
   })
 
